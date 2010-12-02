@@ -4,7 +4,6 @@ then
    mkdir bin
 fi
 
-
-iverilog -o bin/alaw_coder alaw_coder.v 
-vvp bin/alaw_coder
+iverilog -o bin/alaw_test alaw_coder.v alaw_decoder.v alaw_test.v
+vvp bin/alaw_test
 
