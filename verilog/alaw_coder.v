@@ -7,5 +7,7 @@ always @(input_lin) begin
     // TODO: A-law coder algorithm goes here ;)
 end
 
+assign output_alaw = input_lin; // for now, just pass-through
+
 endmodule
 

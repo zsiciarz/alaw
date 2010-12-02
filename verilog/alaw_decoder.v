@@ -7,5 +7,7 @@ always @(input_alaw) begin
     // TODO: A-law decoder algorithm goes here ;)
 end
 
+assign output_lin = input_alaw; // for now, just pass-through
+
 endmodule
 
