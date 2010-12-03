@@ -35,8 +35,7 @@ always @(input_alaw) begin
     end
 end
 
-// TODO: keep the sign bit here!
-assign output_lin = {1'b0, output_unsigned};
+assign output_lin = {input_alaw[7], output_unsigned};
 
 endmodule
 
