@@ -1,3 +1,5 @@
+`timescale 10ns/1ps
+
 module alaw_test;
 
 reg [12:0] input_lin;
@@ -24,6 +26,11 @@ initial begin
         end
     end
     $finish;
+end
+
+initial begin
+    $dumpfile("bin/out.vcd");
+    $dumpvars(0, input_lin, output_alaw, output_decoded);
 end
 
 endmodule
